@@ -1,0 +1,134 @@
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-250%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes hoverAnim {
+    0% {
+        border-radius: 25px;
+    }
+    100% {
+        border-radius: 0px;
+    }
+}
+
+@keyframes hoverAnimReverse {
+    0% {
+        border-radius: 0px;
+    }
+    100% {
+        border-radius: 25px;
+    }
+}
+
+@keyframes pulsateNav {
+    0% {
+        border-radius: 0px;
+    }
+    100% {
+        border-radius: 100px;
+    }
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 770px;}
+}
+
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75) ;}
+    to{border-right-color: transparent;}
+}
+
+video {
+    object-fit: cover;
+    -webkit-filter: brightness(40%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+header {
+    height: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 40px;
+}
+
+.navbar {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    animation-name: dropHeader;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-duration: 1s;
+}
+
+header li {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.63);
+    border-radius: 25px;
+    margin: 25px;
+}
+
+header li:hover {
+    animation-name: hoverAnim;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+}
+
+.navbar a {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+	display: inline-block;
+	margin: 10px 25px;
+}
+
+#main-content h1{
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 80px;
+    color: rgba(255,255,255, 1.0);
+    margin: 50px auto;
+}
+  
+  /* Animation */
+#main-content h1{
+    animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+}
+
+#main-content h2{
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 40px;
+    color: rgba(255,255,255, 1.0);
+    margin: 20px auto;
+}
+  
+  /* Animation */
+#main-content h2{
+    animation: animated-text 1.5s steps(29,end) 3s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+}
