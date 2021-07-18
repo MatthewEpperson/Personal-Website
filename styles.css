@@ -37,13 +37,50 @@
 
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 770px;}
+    0% {
+        border-right-color: rgba(0,255,0,0.0);
+    }
+    100% {
+        border-right-color: rgba(0,255,0,0);
+    }
+    to{width: 750px;}
+}
+
+@keyframes animated-text2{
+    from{width: 0;}
+    to{width: 675px;}
+}
+
+@keyframes animated-text3{
+    from{width: 0;}
+    to{width: 740px;}
 }
 
 @keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+}
+
+@keyframes animated-textMobile {
+    from{width: 0%;}
+    to{width: 480px;}
+}
+
+@keyframes animated-textMobile2 {
+    from{width: 0%;}
+    to{width: 435px;}
+}
+
+@keyframes animated-textMobile3 {
+    from{width: 0%;}
+    to{width: 440px;}
+}
+
+@keyframes animated-cursorMobile{
     from{border-right-color: rgba(0,255,0,.75) ;}
     to{border-right-color: transparent;}
 }
+
 
 video {
     object-fit: cover;
@@ -63,7 +100,7 @@ header {
     left: 0;
     right: 0;
     text-align: center;
-    padding: 40px;
+    padding: 0px;
 }
 
 .navbar {
@@ -106,15 +143,15 @@ header li:hover {
     white-space: nowrap;
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace; 
-    font-size: 80px;
-    color: rgba(255,255,255, 1.0);
-    margin: 50px auto;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.835);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.507);
+    margin: 200px auto;
 }
   
-  /* Animation */
 #main-content h1{
     animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
-               animated-cursor 600ms steps(29,end) infinite;
+               animated-cursor 600ms steps(29,end) 1s 3 forwards;
 }
 
 #main-content h2{
@@ -123,12 +160,98 @@ header li:hover {
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace; 
     font-size: 40px;
-    color: rgba(255,255,255, 1.0);
-    margin: 20px auto;
+    color: rgb(189, 189, 189);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
+    margin: -200px auto;
 }
   
   /* Animation */
 #main-content h2{
-    animation: animated-text 1.5s steps(29,end) 3s 1 normal both,
-               animated-cursor 600ms steps(29,end) infinite;
+    border-right-color: transparent;
+    animation: animated-text2 1.8s steps(29,end) 2.9s 1 normal both,
+               animated-cursor 600ms steps(29,end) 2.9s 4 forwards;
+}
+
+#main-content h3{
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 40px;
+    color: rgb(156, 141, 0);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
+    margin: 200px auto;
+}
+
+#main-content h3{
+    border-right-color: transparent;
+    animation: animated-text3 1.8s steps(29,end) 5.1s 1 normal both,
+               animated-cursor 600ms steps(29,end) 5s infinite;
+}
+
+@media only screen and (max-width: 600px) {
+    video {
+        object-fit: cover;
+        -webkit-filter: brightness(40%);
+        width: calc(100vw - 300px);
+        height: 100vh;
+        padding-left: 300px;
+        top: 0;
+        left: 0;
+        z-index: -5;
+    }
+
+    #main-content h1{
+        border-right: solid 3px rgba(0, 255, 0, .75);
+        white-space: nowrap;
+        overflow: hidden;    
+        width: 380px;
+        font-family: 'Source Code Pro', monospace; 
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        margin: 220px 100px 0px 55px;
+        text-align: left;
+    }
+      
+    #main-content h1{
+        border-right: solid 3px rgba(0, 255, 0, 0);
+        animation: animated-textMobile 1.5s steps(29,end) 1s 1 normal both,
+                   animated-cursor 600ms steps(29,end) 6.0 forwards;
+    }
+
+    #main-content h2{
+        border-right: solid 3px rgba(0,255,0,.75);
+        white-space: nowrap;
+        overflow: hidden;  
+        font-family: 'Source Code Pro', monospace; 
+        font-size: 30px;
+        color: rgba(255,255,255, 1.0);
+        margin: 1px 100px 55px 80px;
+        text-align: left;
+    }
+      
+      /* Animation */
+    #main-content h2{
+        border-right-color: rgba(0, 255, 0, 0);
+        animation: animated-textMobile2 2s steps(29,end) 2.9s 1 normal both,
+                   animated-cursor 600ms steps(29,end) 2.9s infinite;
+    }
+
+    #main-content h3{
+        border-right: solid 3px rgba(0,255,0,.75);
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Source Code Pro', monospace; 
+        font-size: 20px;
+        color: rgba(255,255,255, 1.0);
+        margin: -48px 40px 40px 100px;
+        text-align: left;
+    }
+      
+      /* Animation */
+    #main-content h3{
+        border-right-color: rgba(0, 255, 0, 0);
+        animation: animated-textMobile3 1.5s steps(29,end) 4.5s 1 normal both,
+                   animated-cursor 600ms steps(29,end) 4.5s infinite;
+    }
 }
