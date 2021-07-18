@@ -48,12 +48,12 @@
 
 @keyframes animated-text2{
     from{width: 0;}
-    to{width: 675px;}
+    to{width: 665px;}
 }
 
 @keyframes animated-text3{
     from{width: 0;}
-    to{width: 740px;}
+    to{width: 750px;}
 }
 
 @keyframes animated-cursor{
@@ -63,17 +63,17 @@
 
 @keyframes animated-textMobile {
     from{width: 0%;}
-    to{width: 480px;}
+    to{width: 490px;}
 }
 
 @keyframes animated-textMobile2 {
     from{width: 0%;}
-    to{width: 435px;}
+    to{width: 550px;}
 }
 
 @keyframes animated-textMobile3 {
     from{width: 0%;}
-    to{width: 440px;}
+    to{width: 450px;}
 }
 
 @keyframes animated-cursorMobile{
@@ -178,7 +178,7 @@ header li:hover {
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace; 
     font-size: 40px;
-    color: rgb(156, 141, 0);
+    color: rgba(179,163,105, 1.0);
     text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
     margin: 200px auto;
 }
@@ -208,7 +208,8 @@ header li:hover {
         width: 380px;
         font-family: 'Source Code Pro', monospace; 
         font-size: 50px;
-        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0.835);
+        text-shadow: 5px 5px rgba(0, 0, 0, 0.507);
         margin: 220px 100px 0px 55px;
         text-align: left;
     }
@@ -216,7 +217,7 @@ header li:hover {
     #main-content h1{
         border-right: solid 3px rgba(0, 255, 0, 0);
         animation: animated-textMobile 1.5s steps(29,end) 1s 1 normal both,
-                   animated-cursor 600ms steps(29,end) 6.0 forwards;
+                   animated-cursor 600ms steps(29,end) 1s 3 forwards;
     }
 
     #main-content h2{
@@ -225,33 +226,34 @@ header li:hover {
         overflow: hidden;  
         font-family: 'Source Code Pro', monospace; 
         font-size: 30px;
-        color: rgba(255,255,255, 1.0);
-        margin: 1px 100px 55px 80px;
+        color: rgb(189, 189, 189);
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
+        margin: 1px 100px 55px 50px;
         text-align: left;
     }
       
       /* Animation */
     #main-content h2{
         border-right-color: rgba(0, 255, 0, 0);
-        animation: animated-textMobile2 2s steps(29,end) 2.9s 1 normal both,
-                   animated-cursor 600ms steps(29,end) 2.9s infinite;
+        animation: animated-textMobile2 1.8s steps(29,end) 2.9s 1 normal both,
+                   animated-cursor 600ms steps(29,end) 2.9s 4 forwards;
     }
 
     #main-content h3{
-        border-right: solid 3px rgba(0,255,0,.75);
+        border-right: solid 3px rgba(0,255,0,.75);;
         white-space: nowrap;
         overflow: hidden;    
         font-family: 'Source Code Pro', monospace; 
-        font-size: 20px;
-        color: rgba(255,255,255, 1.0);
-        margin: -48px 40px 40px 100px;
+        font-size: 24px;
+        color: rgba(179,163,105, 1.0);
+        margin: -48px 40px 40px 65px;
         text-align: left;
     }
       
       /* Animation */
     #main-content h3{
         border-right-color: rgba(0, 255, 0, 0);
-        animation: animated-textMobile3 1.5s steps(29,end) 4.5s 1 normal both,
-                   animated-cursor 600ms steps(29,end) 4.5s infinite;
+        animation: animated-textMobile3 1.5s steps(29,end) 5.1s 1 normal both,
+                   animated-cursor 600ms steps(29,end) 5s infinite;
     }
 }
