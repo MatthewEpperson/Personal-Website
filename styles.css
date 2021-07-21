@@ -1,259 +1,141 @@
-@keyframes dropHeader {
-    0% {
-        transform: translateY(-250%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+@-webkit-keyframes slideHeaderDown {
+  0% {
+    -webkit-transform: translateY(-900px);
+            transform: translateY(-900px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
-
-@keyframes hoverAnim {
-    0% {
-        border-radius: 25px;
-    }
-    100% {
-        border-radius: 0px;
-    }
-}
-
-@keyframes hoverAnimReverse {
-    0% {
-        border-radius: 0px;
-    }
-    100% {
-        border-radius: 25px;
-    }
-}
-
-@keyframes pulsateNav {
-    0% {
-        border-radius: 0px;
-    }
-    100% {
-        border-radius: 100px;
-    }
-}
-
-@keyframes animated-text{
-    from{width: 0;}
-    0% {
-        border-right-color: rgba(0,255,0,0.0);
-    }
-    100% {
-        border-right-color: rgba(0,255,0,0);
-    }
-    to{width: 750px;}
-}
-
-@keyframes animated-text2{
-    from{width: 0;}
-    to{width: 665px;}
-}
-
-@keyframes animated-text3{
-    from{width: 0;}
-    to{width: 750px;}
-}
-
-@keyframes animated-cursor{
-    from{border-right-color: rgba(0,255,0,.75);}
-    to{border-right-color: transparent;}
-}
-
-@keyframes animated-textMobile {
-    from{width: 0%;}
-    to{width: 490px;}
-}
-
-@keyframes animated-textMobile2 {
-    from{width: 0%;}
-    to{width: 550px;}
-}
-
-@keyframes animated-textMobile3 {
-    from{width: 0%;}
-    to{width: 450px;}
-}
-
-@keyframes animated-cursorMobile{
-    from{border-right-color: rgba(0,255,0,.75) ;}
-    to{border-right-color: transparent;}
-}
-
-
-video {
-    object-fit: cover;
-    -webkit-filter: brightness(40%);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -5;
+@keyframes slideHeaderDown {
+  0% {
+    -webkit-transform: translateY(-900px);
+            transform: translateY(-900px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 header {
-    height: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 0px;
+  height: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0px;
 }
 
-.navbar {
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
-    display: inline-block;
-    animation-name: dropHeader;
-	animation-iteration-count: 1;
-	animation-timing-function: ease;
-	animation-duration: 1s;
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(35%);
+  max-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
 }
 
 header li {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.63);
-    border-radius: 25px;
-    margin: 25px;
+  display: inline-block;
+  text-align: center;
+  -webkit-animation: slideHeaderDown 1s ease 0s 1 backwards;
+          animation: slideHeaderDown 1s ease 0s 1 backwards;
 }
 
-header li:hover {
-    animation-name: hoverAnim;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-duration: .4s;
+.button {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  width: 10vw;
+  font-size: 1.2vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.815);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 3em;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #0000002a;
 }
 
-.navbar a {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-	display: inline-block;
-	margin: 10px 25px;
+button {
+  background-color: transparent;
+  border: 2px solid #949494;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #b1b1b1;
 }
 
-#main-content h1{
-    border-right: solid 3px rgba(0,255,0,.75);
-    white-space: nowrap;
-    overflow: hidden;    
-    font-family: 'Source Code Pro', monospace; 
-    font-size: 4vw;
-    color: rgba(255, 255, 255, 0.835);
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.507);
-    margin: 200px auto;
-}
-  
-#main-content h1{
-    animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
-               animated-cursor 600ms steps(29,end) 1s 3 forwards;
+button:hover {
+  -webkit-box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+          box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+  border: 2px solid #f1f1f1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-#main-content h2{
-    border-right: solid 3px rgba(0,255,0,.75);
-    white-space: nowrap;
-    overflow: hidden;    
-    font-family: 'Source Code Pro', monospace; 
-    font-size: 40px;
-    color: rgb(189, 189, 189);
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
-    margin: -200px auto;
+/* HOME PAGE CONTENT */
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(-800px);
+            transform: translateY(-800px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
-  
-  /* Animation */
-#main-content h2{
-    border-right-color: transparent;
-    animation: animated-text2 1.8s steps(29,end) 2.9s 1 normal both,
-               animated-cursor 600ms steps(29,end) 2.9s 4 forwards;
-}
-
-#main-content h3{
-    border-right: solid 3px rgba(0,255,0,.75);
-    white-space: nowrap;
-    overflow: hidden;    
-    font-family: 'Source Code Pro', monospace; 
-    font-size: 40px;
-    color: rgba(179,163,105, 1.0);
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
-    margin: 200px auto;
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(-800px);
+            transform: translateY(-800px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
-#main-content h3{
-    border-right-color: transparent;
-    animation: animated-text3 1.8s steps(29,end) 5.1s 1 normal both,
-               animated-cursor 600ms steps(29,end) 5s infinite;
+#main-content {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 15%;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
-@media only screen and (max-width: 600px) {
-    video {
-        object-fit: cover;
-        -webkit-filter: brightness(40%);
-        width: calc(100vw - 300px);
-        height: 100vh;
-        padding-left: 300px;
-        top: 0;
-        left: 0;
-        z-index: -5;
-    }
-
-    #main-content h1{
-        border-right: solid 3px rgba(0, 255, 0, .75);
-        white-space: nowrap;
-        overflow: hidden;    
-        width: 380px;
-        font-family: 'Source Code Pro', monospace; 
-        font-size: 50px;
-        color: rgba(255, 255, 255, 0.835);
-        text-shadow: 5px 5px rgba(0, 0, 0, 0.507);
-        margin: 220px 100px 0px 55px;
-        text-align: left;
-    }
-      
-    #main-content h1{
-        border-right: solid 3px rgba(0, 255, 0, 0);
-        animation: animated-textMobile 1.5s steps(29,end) 1s 1 normal both,
-                   animated-cursor 600ms steps(29,end) 1s 3 forwards;
-    }
-
-    #main-content h2{
-        border-right: solid 3px rgba(0,255,0,.75);
-        white-space: nowrap;
-        overflow: hidden;  
-        font-family: 'Source Code Pro', monospace; 
-        font-size: 30px;
-        color: rgb(189, 189, 189);
-        text-shadow: 3px 3px rgba(0, 0, 0, 0.411);
-        margin: 1px 100px 55px 50px;
-        text-align: left;
-    }
-      
-      /* Animation */
-    #main-content h2{
-        border-right-color: rgba(0, 255, 0, 0);
-        animation: animated-textMobile2 1.8s steps(29,end) 2.9s 1 normal both,
-                   animated-cursor 600ms steps(29,end) 2.9s 4 forwards;
-    }
-
-    #main-content h3{
-        border-right: solid 3px rgba(0,255,0,.75);;
-        white-space: nowrap;
-        overflow: hidden;    
-        font-family: 'Source Code Pro', monospace; 
-        font-size: 24px;
-        color: rgba(179,163,105, 1.0);
-        margin: -48px 40px 40px 65px;
-        text-align: left;
-    }
-      
-      /* Animation */
-    #main-content h3{
-        border-right-color: rgba(0, 255, 0, 0);
-        animation: animated-textMobile3 1.5s steps(29,end) 5.1s 1 normal both,
-                   animated-cursor 600ms steps(29,end) 5s infinite;
-    }
+#main-content h1 {
+  font-size: 7em;
+  color: #e0e0e0;
 }
+
+#main-content h2 {
+  font-size: 4em;
+  color: #b4b4b4;
+  margin-top: 0%;
+}
+
+#main-content h3 {
+  font-size: 3.2em;
+  color: #b3a369;
+  margin-top: 0%;
+}
+/*# sourceMappingURL=styles.css.map */
