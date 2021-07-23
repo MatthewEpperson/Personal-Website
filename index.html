@@ -5,40 +5,69 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Matthew Epperson's Personal Website</title>
-	<link rel="stylesheet" href="styles.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 <body style="margin: 0px">
 	<Header>
 		<div class="navbar">
-			<li>
-				<button class="button"><span>About</span></button>
-			</li>
-			<li>
-				<button class="button"><span>Portfolio</span></button>
-			</li>
-			<li>
-				<button class="button"><span>Education</span></button>
-			</li>
-			<li>
-				<button class="button"><span>Contact</span></button>
-			</li>
+			<div id="wrapper">
+				<li>
+					<button class="button" id="aboutBtn"><span>About</span></button>
+				</li>
+				<li>
+					<button class="button"><span>Portfolio</span></button>
+				</li>
+				<li>
+					<button class="button"><span>Education</span></button>
+				</li>
+				<li>
+					<button class="button"><span>Contact</span></button>
+				</li>
+				<li>
+					<button class="button"><span>Experience</span></button>
+				</li>
+			</div>
 		</div>
-				<video autoplay muted loop id="video">
-			<source src="Images/rain.mp4" type="video/mp4" style="width:100%;">
-		</video>
+		<div class="vidContainer">
+			<video autoplay muted loop id="video">
+				<source src="Images/rain.mp4" type="video/mp4" style="width:100%;">
+			</video>
+		</div>
 	</Header>
 	<div id="main-content">
 		<h1>Matthew Epperson</h1>
 		<h2>Computer Science Student at</h2>
 		<h3 id="GT">Georgia Institute of Technology</h3>
-		<script src="app.js"></script>
+	</div>
+	<div id="about">
+		<h2>About Me</h2>
+		<div class="container">
+			<div class ="row">
+				<div class="aboutme">
+					<p id="aboutmeInfo-p1">Hi! I'm Matthew Epperson, an aspiring software engineer
+						and a current Computer Science student at the Georgia Institute of Technology.
+						I was first introduced to programming through a friend at the age of 20. Immediately,
+						I became fascinated by the idea of being able to automate or create whatever I wanted through 
+						software. To this day, my unyielding desire to learn more about software development has grown
+						tremendously.
+					</p>
+					<br>
+					<p id="aboutmeInfo-p2">Apart from coding, some of my hobbies include swing trading in the
+						stock market, playing video games, golfing, and fishing. In the future, I hope to create something
+						that will having a lasting positive impact on the world through software!
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
+<script src="app.js"></script>
 </html>

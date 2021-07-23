@@ -20,6 +20,14 @@
   }
 }
 
+body {
+  background-color: black;
+}
+
+.navbar {
+  display: inline-block;
+}
+
 header {
   height: 5px;
   position: relative;
@@ -35,10 +43,9 @@ video {
      object-fit: cover;
   -webkit-filter: brightness(35%);
   max-width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
+  top: -115px;
   left: 0;
+  position: absolute;
   z-index: -5;
 }
 
@@ -47,6 +54,10 @@ header li {
   text-align: center;
   -webkit-animation: slideHeaderDown 1s ease 0s 1 backwards;
           animation: slideHeaderDown 1s ease 0s 1 backwards;
+}
+
+#wrapper {
+  position: relative;
 }
 
 .button {
@@ -109,7 +120,9 @@ button:hover {
   font-family: 'Saira Semi Condensed', sans-serif;
   text-align: center;
   position: relative;
+  display: block;
   margin-top: 15%;
+  background-size: cover;
   -webkit-animation-name: slideUp;
           animation-name: slideUp;
   -webkit-animation-timing-function: ease;
@@ -137,5 +150,97 @@ button:hover {
   font-size: 3.2em;
   color: #b3a369;
   margin-top: 0%;
+}
+
+/* ABOUT ME SECTION */
+@-webkit-keyframes containerPulse {
+  0% {
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0 2px 0 #ffffff inset, 0 0 2px 2px #ffffff;
+            box-shadow: 0 0 2px 0 #ffffff inset, 0 0 2px 2px #ffffff;
+  }
+  100% {
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0 5px 0 #ffffff inset, 0 0 5px 5px #ffffff;
+            box-shadow: 0 0 5px 0 #ffffff inset, 0 0 5px 5px #ffffff;
+  }
+}
+@keyframes containerPulse {
+  0% {
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0 2px 0 #ffffff inset, 0 0 2px 2px #ffffff;
+            box-shadow: 0 0 2px 0 #ffffff inset, 0 0 2px 2px #ffffff;
+  }
+  100% {
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0 5px 0 #ffffff inset, 0 0 5px 5px #ffffff;
+            box-shadow: 0 0 5px 0 #ffffff inset, 0 0 5px 5px #ffffff;
+  }
+}
+
+.container {
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  -webkit-animation-name: containerPulse;
+          animation-name: containerPulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#about {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  display: block;
+}
+
+.aboutme {
+  display: block;
+  background-color: rgba(255, 0, 0, 0);
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
+  -webkit-margin-start: 2em;
+          margin-inline-start: 2em;
+  -webkit-margin-end: 2em;
+          margin-inline-end: 2em;
+}
+
+#about h2 {
+  font-size: 40px;
+  padding-top: 500px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#about p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  word-spacing: 2px;
+  color: white;
+  text-align: left;
+  font-size: 26px;
+  font-weight: 0;
 }
 /*# sourceMappingURL=styles.css.map */
