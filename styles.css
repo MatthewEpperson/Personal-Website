@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
 }
 
 .navbar {
@@ -179,6 +179,7 @@ button:hover {
 }
 
 .container {
+  background-color: rgba(49, 49, 49, 0.5);
   max-width: 50em;
   margin-right: auto;
   margin-left: auto;
@@ -213,7 +214,7 @@ button:hover {
 
 .aboutme {
   display: block;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgba(126, 112, 112, 0);
   -webkit-margin-before: 2em;
           margin-block-start: 2em;
   -webkit-margin-after: 2em;
