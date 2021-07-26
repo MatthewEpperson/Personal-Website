@@ -244,4 +244,72 @@ button:hover {
   font-size: 26px;
   font-weight: 0;
 }
+
+/* PORTFOLIO SECTION */
+.container-Portfolio {
+  background-color: #0a0a0a;
+  border-top: 2px solid rgba(83, 83, 83, 0.315);
+  margin-top: 20em;
+  padding-bottom: 10em;
+}
+
+.container-Portfolio h2 {
+  padding-top: 2em;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.awnBot {
+  margin-top: 10em;
+  width: 32%;
+  height: auto;
+  border: 2px solid white;
+  position: relative;
+  display: inline;
+  margin-left: 6em;
+  -webkit-animation-name: containerPulse;
+          animation-name: containerPulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.row-Portfolio h3 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin-left: 10em;
+  padding-top: 3em;
+}
+
+.row-Portfolio p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateY(-1200%);
+          transform: translateY(-1200%);
+  margin-left: 38em;
+  margin-top: 1.1em;
+}
 /*# sourceMappingURL=styles.css.map */
