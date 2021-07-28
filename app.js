@@ -5,5 +5,5 @@ $('#aboutBtn').click(function(e){
 
 $('#portfolioBtn').click(function(e){
     var $target = $('html, #portfolio');
-    $target.animate({scrollTop: 1700}, 600);
+    $target.animate({scrollTop: 1800}, 600);
 });
