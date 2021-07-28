@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -41,6 +41,7 @@
 		<h1>Matthew Epperson</h1>
 		<h2>Computer Science Student at</h2>
 		<h3 id="GT">Georgia Institute of Technology</h3>
+		<a href="MatthewEpperson_Resume.pdf"><button class="button" id="resumeBtn"><span>Resume</span></button></a>
 	</div>
 	<div id="about">
 		<h2>About Me</h2>
@@ -68,20 +69,24 @@
 	</div>
 	<div id="portfolio">
 		<div class="container-Portfolio">
+			<h2>Portfolio</h2>
 			<div class="row-Portfolio">
-				<h2>Portfolio</h2>
-				<h3>Discord Stocks Bot</h3>
-				<img src="Images/awnBot1.png" class="awnBot">
-				<p> ● Discord bot that allows a user to trade stocks through server currency </p>
-				<br>
-				<p> ● Kept track of a plethora of stats for users such as profits/losses and displayed weekly,
-					monthly, and yearly charts </p>
-				<br>
-				<p> ● Bot was coded entirely in Python and utilized various python libraries </p>
-				<br>
-				<p> ● Developed in the summer of 2020 with 3 months of self-taught coding experience </p>
-				<br>
-				<p> ● Used SQLite to keep track of user data such as sell/buy history and P&L information </p>
+				<div class="discordBot">
+					<h3>Discord Stocks Bot</h3>
+					<img src="Images/awnBot1.png" id="awnBot">
+					<div class="discordBotText">
+						<p> ● Discord bot that allows a user to trade stocks through server currency </p>
+						<br>
+						<p> ● Kept track of a plethora of stats for users such as profits/losses and displayed weekly,
+							monthly, and yearly charts </p>
+						<br>
+						<p> ● Bot was coded entirely in Python and utilized various python libraries </p>
+						<br>
+						<p> ● Developed in the summer of 2020 with 3 months of self-taught coding experience </p>
+						<br>
+						<p> ● Used SQLite to keep track of user data such as sell/buy history and P&L information </p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
