@@ -33,6 +33,7 @@ video {
     left: 0;
     position: absolute;
     z-index: -5;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 header li {
@@ -145,8 +146,8 @@ button:hover {
     max-width: 50em;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 22px;
-    margin-bottom: 100px;
+    margin-top: 25px;
+    margin-bottom: -5em;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
@@ -177,7 +178,7 @@ button:hover {
 
 #about h2 {
     font-size: 40px;
-    padding-top: 500px;
+    padding-top: 9em;
     text-align: center;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -253,6 +254,92 @@ button:hover {
 }
 
 .discordBotText {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position: relative;
+    margin-left: 35em;
+    margin-top: 3.2em;
+}
+
+.osrsPingTester {
+    display: inline-block;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.osrsPingTester h3 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 10em;
+}
+
+.osrsPingTester #OSRSPING {
+    float: left;
+    margin-top: 4.4em;
+    width: 37%;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    margin-left: 5.5em;
+    animation-name: containerPulse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.osrsPingText {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position: relative;
+    margin-left: 35em;
+    margin-top: 3.2em;
+}
+
+.personalWebsite {
+    display: inline-block;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.personalWebsite h3 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 7.2em;
+}
+
+.personalWebsite #personalSite {
+    float: left;
+    margin-top: 4.4em;
+    width: 30%;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    margin-left: 5.5em;
+    animation-name: containerPulse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.personalSiteText {
     font-family: 'Saira Semi Condensed', sans-serif;
     letter-spacing: 1px;
     font-size: 18px;

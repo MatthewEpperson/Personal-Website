@@ -47,6 +47,7 @@ video {
   left: 0;
   position: absolute;
   z-index: -5;
+  border-bottom: 2px solid white;
 }
 
 header li {
@@ -187,8 +188,8 @@ button:hover {
   max-width: 50em;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 22px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: -5em;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
@@ -227,7 +228,7 @@ button:hover {
 
 #about h2 {
   font-size: 40px;
-  padding-top: 500px;
+  padding-top: 9em;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -309,6 +310,104 @@ button:hover {
 }
 
 .discordBotText {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  position: relative;
+  margin-left: 35em;
+  margin-top: 3.2em;
+}
+
+.osrsPingTester {
+  display: inline-block;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.osrsPingTester h3 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin-left: 10em;
+}
+
+.osrsPingTester #OSRSPING {
+  float: left;
+  margin-top: 4.4em;
+  width: 37%;
+  height: auto;
+  border: 2px solid white;
+  position: relative;
+  margin-left: 5.5em;
+  -webkit-animation-name: containerPulse;
+          animation-name: containerPulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.osrsPingText {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  position: relative;
+  margin-left: 35em;
+  margin-top: 3.2em;
+}
+
+.personalWebsite {
+  display: inline-block;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.personalWebsite h3 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin-left: 7.2em;
+}
+
+.personalWebsite #personalSite {
+  float: left;
+  margin-top: 4.4em;
+  width: 30%;
+  height: auto;
+  border: 2px solid white;
+  position: relative;
+  margin-left: 5.5em;
+  -webkit-animation-name: containerPulse;
+          animation-name: containerPulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.personalSiteText {
   font-family: 'Saira Semi Condensed', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
