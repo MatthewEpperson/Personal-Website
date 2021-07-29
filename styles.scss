@@ -143,7 +143,7 @@ button:hover {
 
 .container {
     background-color: rgba(49, 49, 49, 0.5);
-    max-width: 50em;
+    max-width: 60em;
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
@@ -196,17 +196,134 @@ button:hover {
     font-weight: 0;
 }
 
+/* EXPERIENCE SECTION */
+
+#experience {
+    margin-top: 14em;
+}
+
+.container-experience {
+    border-top: 2px solid rgba(83, 83, 83, 0.315);
+    background-color: rgb(10, 10, 10);
+    padding-bottom: 8em;
+}
+
+.container-experience h2 {
+    padding-top: 1em;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.row-experience {
+    text-align: center;
+    display: block;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    background-color: rgba(49, 49, 49, 0.5);
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    animation-name: containerPulse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.experience {
+    margin-left: 0em;
+    margin-right: 0em;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+/* EDUCATION SECTION */
+
+#education {
+    margin-top: 0em;
+}
+
+.container-education {
+    border-top: 2px solid rgba(83, 83, 83, 0.315);
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 8em;
+}
+
+.container-education h2 {
+    padding-top: 1em;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.education-date {
+    float: right;
+    padding-top: 1.5em;
+    font-size: 18px;
+}
+
+.row-education {
+    display: block;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    background-color: rgba(49, 49, 49, 0.5);
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    animation-name: containerPulse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.education {
+    margin-left: 0em;
+    margin-right: 0em;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 1em;
+}
+
 /* PORTFOLIO SECTION */
 
 .container-Portfolio {
     background-color: rgb(10, 10, 10);
     border-top: 2px solid rgba(83, 83, 83, 0.315);
-    margin-top: 20em;
+    margin-top: 0em;
     padding-bottom: 10em;
 }
 
 .container-Portfolio h2 {
-    padding-top: 2em;
+    padding-top: 1em;
     font-family: 'Saira Semi Condensed', sans-serif;
     letter-spacing: 2px;
     font-size: 40px;
@@ -352,4 +469,93 @@ button:hover {
     position: relative;
     margin-left: 35em;
     margin-top: 3.2em;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    margin-top: 0em;
+}
+
+.container-contact {
+    border-top: 2px solid rgba(83, 83, 83, 0.315);
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 8em;
+}
+
+.container-contact h2 {
+    padding-top: 1em;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.row-contact {
+    text-align: center;
+    margin-top: 4em;
+}
+
+#LinkedIn {
+    border: 2px solid green;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #949494;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #b1b1b1;
+    position: relative;
+}
+
+#LinkedIn:hover {
+    box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+    border: 2px solid #f1f1f1;
+    transform: scale(1.05);
+}
+
+#LinkedIn img {
+    filter: brightness(2.5);
+}
+
+#Github {
+    border: 2px solid green;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #949494;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #b1b1b1;
+    position: relative;
+    margin-left: 2em;
+}
+
+#Github:hover {
+    box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+    border: 2px solid #f1f1f1;
+    transform: scale(1.05);
+
+}
+
+#Github img {
+    filter: brightness(7);
+}
+
+.row-contact #email {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+.row-contact #phone {
+    color: rgba(255, 255, 255, 0.815);
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
 }

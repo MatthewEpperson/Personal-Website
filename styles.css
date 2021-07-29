@@ -185,7 +185,7 @@ button:hover {
 
 .container {
   background-color: rgba(49, 49, 49, 0.5);
-  max-width: 50em;
+  max-width: 60em;
   margin-right: auto;
   margin-left: auto;
   margin-top: 25px;
@@ -246,16 +246,143 @@ button:hover {
   font-weight: 0;
 }
 
+/* EXPERIENCE SECTION */
+#experience {
+  margin-top: 14em;
+}
+
+.container-experience {
+  border-top: 2px solid rgba(83, 83, 83, 0.315);
+  background-color: #0a0a0a;
+  padding-bottom: 8em;
+}
+
+.container-experience h2 {
+  padding-top: 1em;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-experience {
+  text-align: center;
+  display: block;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: white;
+  letter-spacing: 0.5px;
+  background-color: rgba(49, 49, 49, 0.5);
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  -webkit-animation-name: containerPulse;
+          animation-name: containerPulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.experience {
+  margin-left: 0em;
+  margin-right: 0em;
+  font-size: 16px;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+/* EDUCATION SECTION */
+#education {
+  margin-top: 0em;
+}
+
+.container-education {
+  border-top: 2px solid rgba(83, 83, 83, 0.315);
+  background-color: black;
+  padding-bottom: 8em;
+}
+
+.container-education h2 {
+  padding-top: 1em;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.education-date {
+  float: right;
+  padding-top: 1.5em;
+  font-size: 18px;
+}
+
+.row-education {
+  display: block;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: white;
+  letter-spacing: 0.5px;
+  background-color: rgba(49, 49, 49, 0.5);
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  -webkit-animation-name: containerPulse;
+          animation-name: containerPulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.education {
+  margin-left: 0em;
+  margin-right: 0em;
+  font-size: 16px;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
 /* PORTFOLIO SECTION */
 .container-Portfolio {
   background-color: #0a0a0a;
   border-top: 2px solid rgba(83, 83, 83, 0.315);
-  margin-top: 20em;
+  margin-top: 0em;
   padding-bottom: 10em;
 }
 
 .container-Portfolio h2 {
-  padding-top: 2em;
+  padding-top: 1em;
   font-family: 'Saira Semi Condensed', sans-serif;
   letter-spacing: 2px;
   font-size: 40px;
@@ -419,5 +546,99 @@ button:hover {
   position: relative;
   margin-left: 35em;
   margin-top: 3.2em;
+}
+
+/* CONTACT SECTION */
+#contact {
+  margin-top: 0em;
+}
+
+.container-contact {
+  border-top: 2px solid rgba(83, 83, 83, 0.315);
+  background-color: black;
+  padding-bottom: 8em;
+}
+
+.container-contact h2 {
+  padding-top: 1em;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-contact {
+  text-align: center;
+  margin-top: 4em;
+}
+
+#LinkedIn {
+  border: 2px solid green;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #949494;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #b1b1b1;
+  position: relative;
+}
+
+#LinkedIn:hover {
+  -webkit-box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+          box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+  border: 2px solid #f1f1f1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#LinkedIn img {
+  -webkit-filter: brightness(2.5);
+          filter: brightness(2.5);
+}
+
+#Github {
+  border: 2px solid green;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #949494;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #b1b1b1;
+  position: relative;
+  margin-left: 2em;
+}
+
+#Github:hover {
+  -webkit-box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+          box-shadow: 0 0 10px 0 #797878 inset, 0 0 20px 2px #2c2c2c;
+  border: 2px solid #f1f1f1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#Github img {
+  -webkit-filter: brightness(7);
+          filter: brightness(7);
+}
+
+.row-contact #email {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-top: 1em;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.row-contact #phone {
+  color: rgba(255, 255, 255, 0.815);
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=styles.css.map */
