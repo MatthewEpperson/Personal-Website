@@ -22,3 +22,13 @@ $('#contactBtn').click(function(e){
     var $target = $('html, #contact');
     $target.animate({scrollTop: 5000}, 600);
 });
+
+const navUL = document.querySelector(".navbar ul");
+const navMobileMenuIcon = document.querySelector(".navbar .mobile-menu-icon");
+const mainContent = document.getElementById("main-content");
+
+navMobileMenuIcon.addEventListener("click", function() {
+	navUL.classList.toggle("active");
+	navMobileMenuIcon.classList.toggle("active");
+    mainContent.classList.toggle("active");
+});

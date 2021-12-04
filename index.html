@@ -7,179 +7,185 @@
 	<title>Matthew Epperson's Personal Website</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
-	<link href="bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap">
+	<link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
-<body style="margin: 0px">
-	<Header>
-		<div class="navbar">
-			<div id="wrapper">
-				<li>
-					<button class="button" id="aboutBtn"><span>About</span></button>
-				</li>
-				<li>
-					<button class="button" id="experienceBtn"><span>Experience</span></button>
-				</li>
-				<li>
-					<button class="button" id="educationBtn"><span>Education</span></button>
-				</li>
-				<li>
-					<button class="button" id="portfolioBtn"><span>Portfolio</span></button>
-				</li>
-				<li>
-					<button class="button" id="contactBtn"><span>Contact</span></button>
-				</li>
-			</div>
+<body>
+	<!-- Navigation Bar -->
+	<div class="navbar">
+		<div class="mobile-menu-icon">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
 		</div>
-	</Header>
-	<div id="main-content">
-		<h1>Matthew Epperson</h1>
-		<h2>Computer Science Student at</h2>
-		<h3 id="GT">Georgia Institute of Technology</h3>
-		<a href="MatthewEpperson_Resume.pdf" target="_blank"><button class="button" id="resumeBtn"><span>Resume</span></button></a>
+		<ul>
+			<li><button type="button" class="button" id="aboutBtn">About</button></li>
+			<li><button type="button" class="button" id="experienceBtn">Experience</button></li>
+			<li><button type="button" class="button" id="educationBtn">Education</button></li>
+			<li><button type="button" class="button" id="portfolioBtn">Portfolio</button></li>
+			<li><button type="button" class="button" id="contactBtn">Contact</button></li>
+		</ul>
 	</div>
-	<div id="about">
-		<h2>About Me</h2>
-		<video autoplay muted loop id="video">
+
+	<!-- Main Content -->
+	<section id="main-content">
+		<video autoplay muted loop id="backgroundVideo">
 			<source src="Images/Black.mp4" type="video/mp4" style="width:100%;">
 		</video>
 		<div class="container">
-			<div class ="row">
-				<div class="aboutme">
-					<p id="aboutmeInfo-p1">Hi! I'm Matthew Epperson, an aspiring software engineer
-						and a current Computer Science student at the Georgia Institute of Technology.
-						I was first introduced to programming through a friend at the age of 20. Immediately,
-						I became fascinated by the idea of being able to automate or create whatever I wanted through 
-						software. To this day, my unyielding desire to learn more about software development has grown
-						tremendously.
-					</p>
-					<br>
-					<p id="aboutmeInfo-p2">Apart from coding, some of my hobbies include swing trading in the
-						stock market, playing video games, golfing, and fishing. In the future, I hope to create something
-						that will have a lasting positive impact on the world through software!
-					</p>
-				</div>
+			<h1>Matthew Epperson</h1>
+			<p>Computer Science Student at <span class="GT">Georgia Institute of Technology</span></p>
+			<a href="MatthewEpperson_Resume.pdf" target="_blank"><button type="button" class="button" id="resumeBtn">Resume</button></a>
+		</div>
+	</section>
+
+	<!-- About -->
+	<section id="about">
+		<h2>About Me</h2>
+		<div class="container">
+			<p>Hi! I'm Matthew Epperson, an aspiring software engineer
+				and a current Computer Science student at the Georgia Institute of Technology.
+				I was first introduced to programming through a friend at the age of 20. Immediately,
+				I became fascinated by the idea of being able to automate or create whatever I wanted through 
+				software. To this day, my unyielding desire to learn more about software development has grown
+				tremendously.
+			</p>
+			<p>Apart from coding, some of my hobbies include swing trading in the
+				stock market, playing video games, golfing, and fishing. In the future, I hope to create something
+				that will have a lasting positive impact on the world through software!
+			</p>
+		</div>
+	</section>
+
+	<!-- Experience -->
+	<section id="experience">
+		<h2>Experience</h2>
+		<div class="container">
+			<h3>Georgia State University
+				<span id="role">Mathematics &amp; Computer Science Tutor</span>
+				<span id="date">October 2019 - March 2020</span>
+			</h3>
+			<ul>
+				<li>Tutored over 20 students at Georgia State's tutoring center in particular subjects such as
+					College Algebra, Calculus, Linear Algebra, Introduction to Java</li>
+				<li>Improved numerous students overall grades to a letter grade higher with tutoring throughout the course of the semester</li>
+				<li>Responsible for not only tracking the amount of students that entered the tutoring center on a daily basis, but also 
+					responsible for maintaining communication with them and encouraging them to come back too</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Education -->
+	<section id="education">
+		<h2>Education</h2>
+		<div class="container">
+			<div class="entry">
+				<header>
+					<h3>Georgia Institute of Technology
+						<span id="degree">Bachelor of Science in Computer Science</span>
+					</h3>
+					<span class="date">May 2021 - December 2023</span>
+				</header>
+				
+				<span class="list-title">Relevant Coursework:</span>
+				<ul>
+					<li>Introduction to Object-Oriented Programming</li>
+					<li>Data Structures &amp; Algorithms</li>
+					<li>Discrete Mathematics</li>
+				</ul>
+
+				<span class="list-title">Incoming Coursework:</span>
+				<ul>
+					<li>Objects and Design</li>
+					<li>Computer Organization &amp; Programming</li>
+					<li>Computer Graphics</li>
+					<li>Systems and Networks</li>
+					<li>Computer Networking</li>
+				</ul>
+				
+				<span class="gpa">GPA: 4.0 / 4.0</span>
+			</div>
+
+			<div class="entry">
+				<header>
+					<h3>Georgia State University
+						<span id="degree">Bachelor of Science in Computer Science</span>
+					</h3>
+					<span class="date">August 2019 - May 2021</span>
+				</header>
+				
+				<span class="list-title">Relevant Coursework:</span>
+				<ul>
+					<li>Principles of Computer Science</li>
+					<li>Linear Algebra</li>
+					<li>Discrete Mathematics</li>
+				</ul>
+
+				<span class="gpa">GPA: 3.87 / 4.0</span>
 			</div>
 		</div>
-	</div>
-	<div id="experience">
-		<div class="container-experience">
-			<h2>Experience</h2>
-			<div class="row-experience">
-				<h3>Georgia State University</h3>
-				<h4>Mathematics & Computer Science Tutor</h4>
-				<h5>October 2019 - March 2020</h5>
-				<div class="experience">
-					<p> ● Tutored over 20 students at Georgia State's tutoring center in particular subjects such as
-						College Algebra, Calculus, Linear Algebra, Introduction to Java </p>
-					<p> ● Improved numerous students overall grades to a letter grade higher with tutoring throughout the course of the semester </p>
-					<p> ● Responsible for not only tracking the amount of students that entered the tutoring center on a daily basis, but also 
-						responsible for maintaining communication with them and encouraging them to come back too </p>
-				</div>
-			</div>
+	</section>
+
+	<!-- Portfolio -->
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		
+		<div class="project">
+			<header>
+				<h3>Discord Stocks Bot</h3>
+				<img src="Images/awnBot1.png" id="awnBot">
+			</header>
+			<ul>
+				<li>Discord bot that allows a user to trade stocks through server currency</li>
+				<li>Kept track of a plethora of stats for users such as profits/losses and displayed weekly,
+					monthly, and yearly charts</li>
+				<li>Bot was coded entirely in Python and utilized various python libraries</li>
+				<li>Developed in the summer of 2020 with 3 months of self-taught coding experience</li>
+				<li>Used SQLite to keep track of user data such as sell/buy history and P&L information</li>
+			</ul>
 		</div>
-	</div>
-	<div id="education">
-		<div class="container-education">
-			<h2>Education</h2>
-			<div class="row-education">
-				<span class="education-date">May 2021 - December 2023</span>
-				<h3>Georgia Institute of Technology</h3>
-				<h4>Bachelor of Science in Computer Science</h4>
-				<br>
-				<p> Relevant Coursework: </p>
-				<p> ● Introduction to Object-Oriented Programming </p>
-				<p> ● Data Structures & Algorithms </p>
-				<p> ● Discrete Mathematics </p>
-				<br>
-				<p> Incoming Coursework: </p>
-				<p> ● Objects and Design </p>
-				<p> ● Computer Organization & Programming </p>
-				<p> ● Computer Graphics </p>
-				<p> ● Systems and Networks </p>
-				<p> ● Computer Networking </p>
-				<br>
-				<p> GPA: 4.0 / 4.0</p>
-				<br>
-				<span class="education-date">August 2019 - May 2021</span>
-				<h3>Georgia State University</h3>
-				<h4>Bachelor of Science in Computer Science</h4>
-				<br>
-				<p> Relevant Coursework: </p>
-				<p> ● Principles of Computer Science </p>
-				<p> ● Linear Algebra </p>
-				<br>
-				<p> GPA: 3.87 / 4.0</p>
-			</div>
+ 
+		<div class="project">
+			<header>
+				<h3>OSRS Ping Tester</h3>
+				<img src="Images/OSRS_Ping_Tester.png" id="OSRSPING">
+			</header>
+			<ul>
+				<li>Python script that finds the best servers to play on based on ping for Old School RuneScape</li>
+				<li>Gave the user options on what servers to test based on region and free/member servers</li>
+				<li>My first personal project with about 1 month of self-taught coding experience</li>
+			</ul>
 		</div>
-	</div>
-	<div id="portfolio">
-		<div class="container-Portfolio">
-			<h2>Portfolio</h2>
-			<div class="row-Portfolio">
-				<div class="discordBot">
-					<h3>Discord Stocks Bot</h3>
-					<img src="Images/awnBot1.png" id="awnBot">
-					<div class="discordBotText">
-						<p> ● Discord bot that allows a user to trade stocks through server currency </p>
-						<br>
-						<p> ● Kept track of a plethora of stats for users such as profits/losses and displayed weekly,
-							monthly, and yearly charts </p>
-						<br>
-						<p> ● Bot was coded entirely in Python and utilized various python libraries </p>
-						<br>
-						<p> ● Developed in the summer of 2020 with 3 months of self-taught coding experience </p>
-						<br>
-						<p> ● Used SQLite to keep track of user data such as sell/buy history and P&L information </p>
-					</div>
-				</div>
-				<div class = "osrsPingTester">
-					<h3>OSRS Ping Tester</h3>
-					<img src="Images/OSRS_Ping_Tester.png" id="OSRSPING">
-					<div class="osrsPingText">
-						<p> ● Python script that finds the best servers to play on based on ping for Old School RuneScape </p>
-						<br>
-						<p> ● Gave the user options on what servers to test based on region and free/member servers </p>
-						<br>
-						<p> ● Python script that finds the best servers to play on based on ping for Old School RuneScape</p>
-						<br>
-						<p> ● My first personal project with about 1 month of self-taught coding experience </p>
-					</div>
-				</div>
-				<div class="personalWebsite">
-					<h3>Matthew Epperson's Website</h3>
-					<img src="Images/personal_website.png" id="personalSite">
-					<div class="personalSiteText">
-						<p> ● Personal website that I built from scratch </p>
-						<br>
-						<p> ● Used HTML/CSS/JavaScript to design the website to my liking </p>
-						<br>
-						<p> ● Site is hosted via GitHub Pages with a custom domain that I purchased </p>
-						<br>
-						<p> ● Developed in the summer of 2021 through self-taught front-end development </p>
-					</div>
-				</div>
-			</div>
+
+		<div class="project">
+			<header>
+				<h3>Matthew Epperson's Website</h3>
+				<img src="Images/personal_website.png" id="personalSite">
+			</header>
+			<ul>
+				<li>Personal website that I built from scratch</li>
+				<li>Used HTML/CSS/JavaScript to design the website to my liking</li>
+				<li>Site is hosted via GitHub Pages with a custom domain that I purchased</li>
+				<li>Developed in the summer of 2021 through self-taught front-end development</li>
+			</ul>
 		</div>
-	</div>
-	<div id="contact">
-		<div class="container-contact">
-			<h2>Contact Me</h2>
-			<div class="row-contact">
-				<a href="https://www.linkedin.com/in/matthew-epperson-4a32a11ba/" target="_blank" id="LinkedIn"><img src="Images/LinkedIn_icon.png"></a>
-				<a href="https://github.com/MatthewEpperson" target="_blank" id="Github"><img src="Images/github_icon.png"
-					id="GithubIcon"></a>
-				<br>
-				<a href="mailto: matthewrepperson@gmail.com" id="email">Email: matthewrepperson@gmail.com</a>
-				<p id="phone">Cell Phone: 770-630-6970</p>
-			</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<div class="icons">
+			<a href="https://www.linkedin.com/in/matthew-epperson-4a32a11ba/" target="_blank" id="LinkedIn"><img src="Images/LinkedIn_icon.png"></a>
+			<a href="https://github.com/MatthewEpperson" target="_blank" id="Github"><img src="Images/github_icon.png"
+				id="GithubIcon"></a>
 		</div>
-	</div>
+		<a href="mailto:matthewrepperson@gmail.com" id="email">Email: matthewrepperson@gmail.com</a>
+		<a href="tel:770-630-6970">Cell Phone: 770-630-6970</a>
+	</section>
 </body>
 <script src="app.js"></script>
 </html>
